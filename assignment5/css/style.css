@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 hr.dark {
   width: 300px;
   height: 3px;
@@ -9,7 +15,9 @@ hr.white {
   background: #fff;
 }
 header {
+  max-height: 800px;
   height: 90vh;
+  width: 100vw;
 }
 
 .avatar {
@@ -44,4 +52,9 @@ button span {
 .modal-img {
   border-radius: 20px;
 }
-
+/* 
+@media (max-width: 500px) {
+  hr {
+    display: none;
+  }
+} */

@@ -20,38 +20,40 @@
   </head>
   <body data-spy="scroll" data-target="#main-nav" data-offset="50">
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-flex justify-content-between"
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
       id="main-nav"
     >
-      <a class="navbar-brand ml-5" href="#">START BOOTSTRAP</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-      >
-        Menu <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="container mx-sm-4">
+        <a class="navbar-brand ml-lg-5" href="#">START BOOTSTRAP</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+        >
+          Menu<span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse mr-0" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mr-5 my-2">
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-lg-5 my-2">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <header class="bg-primary text-center text-white py-5 mt-5">
-      <div class="container d-flex align-items-center flex-column py-5">
+    <header class="bg-primary text-center text-white py-5 mt-5 w-100">
+      <div class="container-fluid d-flex align-items-center flex-column py-5">
         <img src="img/avataaars.svg" class="avatar pt-5" alt="" />
-        <h1 class="display-1">START BOOTSTRAP</h1>
+        <h1>START BOOTSTRAP</h1>
         <hr class="white my-3" />
         <p class="lead h2 font-weight-bold mt-3 mb-5">
           Graphic Artist - Web Designer - Illustrator
@@ -60,8 +62,10 @@
     </header>
 
     <section id="portfolio">
-      <div class="container mt-5 py-5">
-        <h3 class="display-2 text-center text-dark">PORTFOLIO</h3>
+      <div
+        class="container-fluid mt-5 py-5 d-flex flex-column align-items-center justify-content-center"
+      >
+        <h2 class="h1 text-center text-dark">PORTFOLIO</h2>
         <hr class="dark" />
         <div class="row mt-5">
           <div class="col-lg-4 col-md-6 my-4">
@@ -177,7 +181,7 @@
         <div
           class="d-flex flex-column align-items-center justify-content-center p-5"
         >
-          <h3 class="display-2 text-center">ABOUT</h3>
+          <h2 class="h1 text-center">ABOUT</h2>
           <hr class="white" />
           <div class="row mx-lg-5 px-lg-5">
             <div class="col-lg-6">
@@ -204,11 +208,13 @@
     </section>
 
     <section id="contact" class="mt-5">
-      <div class="container mt-5 py-5">
-        <h1 class="display-1 text-center text-dark">Contact Me</h1>
+      <div
+        class="container mt-5 py-5 d-flex justify-content-center flex-column align-items-center"
+      >
+        <h2 class="h1 text-center text-dark">Contact Me</h2>
         <hr class="dark" />
-        <div class="d-flex justify-content-center">
-          <form class="w-50 mt-5">
+        <div class="d-flex justify-content-center w-100">
+          <form class="w-75">
             <div class="form-group mb-4">
               <input
                 type="text"
@@ -246,11 +252,11 @@
     <section id="area" class="bg-secondary mt-5 p-5">
       <div class="container">
         <div class="row text-white text-center">
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-5">
             <h3>LOCATION</h3>
             <p class="mt-4 h4">2215 John Daniel Drive Clark, MO 65243</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-5">
             <h3>AROUND THE WEB</h3>
             <div class="mt-4">
               <i
@@ -267,7 +273,7 @@
               ></i>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-5">
             <h3>ABOUT FREELANCER</h3>
             <p class="h">
               Freelance is a free to use, MIT licensed Bootstrap theme created
@@ -280,7 +286,7 @@
     </section>
 
     <footer class="bg-dark text-center p-4 text-white">
-      <p>Copyright &copy; Your Website <span id="id"></span></p>
+      <p>Copyright &copy; Your Website <span id="year"></span></p>
     </footer>
 
     <div class="modal fade show" id="modal1">
@@ -293,9 +299,13 @@
             <div
               class="row d-flex flex-column align-items-center justify-content-center text-center"
             >
-              <h3 class="display-3">LOG CABIN</h3>
+              <h3 class="h1">LOG CABIN</h3>
               <hr class="dark" />
-              <img src="img/cabin.png" alt="" class="modal-img mb-2" />
+              <img
+                src="img/cabin.png"
+                alt=""
+                class="modal-img img-fluid mb-2"
+              />
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
                 ipsam culpa saepe excepturi amet. Qui placeat necessitatibus
@@ -325,9 +335,9 @@
             <div
               class="row d-flex flex-column align-items-center justify-content-center text-center"
             >
-              <h3 class="display-3">TASTY CAKE</h3>
+              <h3 class="h1">TASTY CAKE</h3>
               <hr class="dark" />
-              <img src="img/cake.png" alt="" class="modal-img mb-2" />
+              <img src="img/cake.png" alt="" class="modal-img img-fluid mb-2" />
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
                 ipsam culpa saepe excepturi amet. Qui placeat necessitatibus
@@ -357,9 +367,13 @@
             <div
               class="row d-flex flex-column align-items-center justify-content-center text-center"
             >
-              <h3 class="display-3">CIRCUS TENT</h3>
+              <h3 class="h1">CIRCUS TENT</h3>
               <hr class="dark" />
-              <img src="img/circus.png" alt="" class="modal-img mb-2" />
+              <img
+                src="img/circus.png"
+                alt=""
+                class="modal-img img-fluid mb-2"
+              />
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
                 ipsam culpa saepe excepturi amet. Qui placeat necessitatibus
@@ -389,9 +403,9 @@
             <div
               class="row d-flex flex-column align-items-center justify-content-center text-center"
             >
-              <h3 class="display-3">CONTROLLER</h3>
+              <h3 class="h1">CONTROLLER</h3>
               <hr class="dark" />
-              <img src="img/game.png" alt="" class="modal-img mb-2" />
+              <img src="img/game.png" alt="" class="modal-img img-fluid mb-2" />
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
                 ipsam culpa saepe excepturi amet. Qui placeat necessitatibus
@@ -421,9 +435,9 @@
             <div
               class="row d-flex flex-column align-items-center justify-content-center text-center"
             >
-              <h3 class="display-3">LOCKED SAFE</h3>
+              <h3 class="h1">LOCKED SAFE</h3>
               <hr class="dark" />
-              <img src="img/safe.png" alt="" class="modal-img mb-2" />
+              <img src="img/safe.png" alt="" class="modal-img img-fluid mb-2" />
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
                 ipsam culpa saepe excepturi amet. Qui placeat necessitatibus
@@ -453,9 +467,13 @@
             <div
               class="row d-flex flex-column align-items-center justify-content-center text-center"
             >
-              <h3 class="display-3">SUBMARINE</h3>
+              <h3 class="h1">SUBMARINE</h3>
               <hr class="dark" />
-              <img src="img/submarine.png" alt="" class="modal-img mb-2" />
+              <img
+                src="img/submarine.png"
+                alt=""
+                class="modal-img img-fluid mb-2"
+              />
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
                 ipsam culpa saepe excepturi amet. Qui placeat necessitatibus
