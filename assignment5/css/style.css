@@ -1,0 +1,47 @@
+hr.dark {
+  width: 300px;
+  height: 3px;
+  background: #333;
+}
+hr.white {
+  width: 300px;
+  height: 3px;
+  background: #fff;
+}
+header {
+  height: 90vh;
+}
+
+.avatar {
+  width: 15rem;
+  height: 15rem;
+}
+
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-img {
+  border-radius: 15px;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 0.8;
+}
+
+button span {
+  font-size: 50px;
+}
+
+.modal-img {
+  border-radius: 20px;
+}
+
